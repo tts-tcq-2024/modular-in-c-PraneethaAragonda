@@ -8,5 +8,7 @@ int main() {
     testPairToNumber(BLACK, ORANGE, 12);   // Black and Orange should correspond to Pair 12
     testPairToNumber(VIOLET, SLATE, 25);    // Violet and Slate should correspond to Pair 25
 
+    PrintColorCodeManual();  // Call the new function to print the color code manual
+
     return 0;
 }
