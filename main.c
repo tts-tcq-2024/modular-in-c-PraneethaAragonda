@@ -1,5 +1,5 @@
 // main.c
-#include "color_pair_tests.c"
+#include "color_pair_tests.h" // Include the header instead of the source file
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);     // Should correspond to White and Brown
