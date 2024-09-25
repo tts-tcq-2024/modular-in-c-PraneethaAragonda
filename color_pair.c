@@ -22,3 +22,18 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
 int GetPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors + colorPair->minorColor + 1;
 }
+
+// New function to print color code manual
+void PrintColorCodeManual() {
+    printf("Color Code Manual:\n");
+    printf("Pair Number\tMajor Color\tMinor Color\n");
+    printf("-----------------------------------------\n");
+    for (int major = 0; major < 5; major++) {
+        for (int minor = 0; minor < numberOfMinorColors; minor++) {
+            ColorPair colorPair = { (enum MajorColor)major, (enum MinorColor)minor };
+            int pairNumber = GetPairNumberFromColor(&colorPair);
+            printf("%d\t\t%s\t\t%s\n", pairNumber,
+                MajorColorNames[major], MinorColorNames[minor]);
+        }
+    }
+}
