@@ -1,7 +1,7 @@
 // color_pair_tests.c
 #include <stdio.h>
 #include <assert.h>
-#include "color_pair.h"
+#include "color_pair_tests.h"
 
 #define MAX_COLORPAIR_NAME_CHARS 16
 
